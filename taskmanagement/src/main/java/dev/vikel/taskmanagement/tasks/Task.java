@@ -14,8 +14,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Task {
-    @Id
-    private ObjectId id;
+     @Id
+     private String id;
+
 
     private int taskId;
 
@@ -25,7 +26,7 @@ public class Task {
 
     private String priority;
 
-    @DBRef
+    //@DBRef
     private int userId;
 
 
