@@ -1,15 +1,14 @@
 package dev.vikel.taskmanagement.users;
 
 
-import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface UserRepository extends MongoRepository<User, ObjectId>{
+public interface UserRepository extends MongoRepository<User, String>{
     
     
-    //Works but dont like it yet
-    User findByUserId(int userId);
+    //Not sure if i need rn
+    // User findByUserId(int userId);
 }

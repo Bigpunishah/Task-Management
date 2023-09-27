@@ -12,10 +12,12 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
+    //All tasks from all users
     public List<Task> allTasks(){
         return taskRepository.findAll();
     }
 
+    //Tasks from specific users
     public List<Task> userTasks(int userId){
         return taskRepository.findByUserId(userId);
     }

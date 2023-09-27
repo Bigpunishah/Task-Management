@@ -1,8 +1,7 @@
 package dev.vikel.taskmanagement.tasks;
 
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
+// import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
@@ -26,7 +25,7 @@ public class Task {
 
     private String priority;
 
-    //@DBRef
+    //@DBRef No need for the @DBRef need to figure out what I acutally need it for.
     private int userId;
 
 
