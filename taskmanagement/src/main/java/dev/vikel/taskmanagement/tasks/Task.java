@@ -14,10 +14,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Task {
      @Id
-     private String id;
+     private String taskId;
 
 
-    private int taskId;
+    // private int taskId;
 
     private String taskName;
     
