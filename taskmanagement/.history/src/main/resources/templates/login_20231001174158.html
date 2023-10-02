@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <header>
+        <h1>Page</h1>
+        <nav>
+            <ul>
+                <!-- The backend url to index -->
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Login</h2>
+        <!-- form `action` should include backend apiUrl that matches the JS file aswell -->
+        <!-- method `post` means data is being sent TO backend FROM front end -->
+        <form action="/api/v1/user/login/authenticate" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div class="create-account">
+            <p>Don't have an account? <a href="createaccount.html">Create an account</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

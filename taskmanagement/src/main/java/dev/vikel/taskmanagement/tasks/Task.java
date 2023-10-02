@@ -26,7 +26,7 @@ public class Task {
     private String priority;
 
     //@DBRef No need for the @DBRef need to figure out what I acutally need it for.
-    private int userId;
+    private String userId;
 
 
 }
